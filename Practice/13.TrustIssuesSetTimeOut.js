@@ -1,0 +1,11 @@
+/* 
+Things learned:
+1. The setTimeout function stores it in the callback queue which is executed only after call stack is empty, even if setTimeout is set to 0ms. 
+2. setTimeout ensures that minimum it will take the time mentioned because it may be paused due to call stack not empty.
+*/
+
+console.log(`Welcome to javascript`);
+
+setTimeout(() => {
+    
+}, 5000);
